@@ -1,0 +1,28 @@
+{
+  "TableName": "Test",
+  "KeySchema": [
+    {
+      "AttributeName": "AAA",
+      "KeyType": "HASH"
+    },
+    {
+      "AttributeName": "BBB",
+      "KeyType": "RANGE"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "AAA",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "BBB",
+      "AttributeType": "S"
+    }
+  ],
+  "BillingMode": "PROVISIONED",
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 1000,
+    "WriteCapacityUnits": 1000
+  }
+}
