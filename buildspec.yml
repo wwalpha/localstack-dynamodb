@@ -9,7 +9,8 @@ phases:
     commands:
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
       - npm i -g yarn
-      - yarn composeup
+      - which docker-compose
+      - sudo yarn composeup
       - yarn install
   build:
     commands:
