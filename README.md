@@ -12,9 +12,10 @@ CI/CD の自動テストで AWS DynamoDB を使った場合、いくつ課題が
 
 ## なにをやるのか
 
-- 初期データの投入
+- Localstack 立ち上げ、初期データの投入
 - データ入りの Docker Image を作成し、AWS/GCP で管理
 - Terraform で AWS Fargate/GCP CloudRun を作成し、Endpoint を提供する
+- 再起動すると、再利用が可能
 
 ## どこでやるのか
 

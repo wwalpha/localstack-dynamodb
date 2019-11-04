@@ -6,7 +6,6 @@ import { DynamoDB } from 'aws-sdk';
 const DYNAMO_ENDPOINT = process.env.DYNAMO_ENDPOINT;
 const DEFAULT_REGION = process.env.DEFAULT_REGION;
 
-console.log(DEFAULT_REGION);
 const helper = new Helper({
   options: {
     endpoint: DYNAMO_ENDPOINT,
