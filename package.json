@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "docker build --no-cache --rm -t dynamodb-automation-testing .",
-    "imports": "ts-node src/import.ts"
+    "imports": "ts-node src/import.ts",
+    "composeup": "docker-compose up -d --build",
+    "composedown": "docker-compose down"
   },
   "dependencies": {
     "aws-sdk": "^2.556.0",
