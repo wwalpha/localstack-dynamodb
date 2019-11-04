@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "terraform apply -parallelism=30 -auto-approve=true",
+    "plan": "terraform plan -parallelism=30"
+  }
+}
