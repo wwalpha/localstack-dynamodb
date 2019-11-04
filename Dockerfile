@@ -5,7 +5,7 @@ FROM localstack/localstack
 EXPOSE 4569
 
 # 既存データ
-COPY localstack/data /usr/local/data
+COPY local/data /usr/local/data
 
 # DynamoDBのみ有効
 ENV SERVICES=dynamodb \

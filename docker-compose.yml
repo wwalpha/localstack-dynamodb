@@ -1,13 +1,12 @@
 version: '3'
 services:
-  localstack:
+  dynamodb-tester:
     image: localstack/localstack
     ports:
-      - '4567-4584:4567-4584'
-      - '8080:8080'
+      - '4569:4569'
     environment:
       - SERVICES=dynamodb
       - DATA_DIR=/tmp/localstack/data
     volumes:
-      - './localstack:/tmp/localstack'
+      - './local:/tmp/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'
