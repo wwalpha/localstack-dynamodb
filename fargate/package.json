@@ -3,6 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start": "terraform apply -parallelism=30 -auto-approve=true",
-    "plan": "terraform plan -parallelism=30"
+    "plan": "terraform plan -parallelism=30",
+    "destroy": "terraform destroy -parallelism=30 -auto-approve=true"
   }
 }

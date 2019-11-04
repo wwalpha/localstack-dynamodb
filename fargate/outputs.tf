@@ -1,3 +1,3 @@
-output "vpc" {
-  value = "${module.vpc}"
+output "ecs" {
+  value = "${module.ecs}"
 }
